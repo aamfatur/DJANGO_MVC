@@ -12,4 +12,8 @@ urlpatterns= [
     path('mentor', views.mentor, name='mentor'),
 
     path('author', views.author, name='author'),
+    
+    path('blog/form', views.form, name='form'),
+
+    path('blog/form/news', views.news, name='form'),
     ]

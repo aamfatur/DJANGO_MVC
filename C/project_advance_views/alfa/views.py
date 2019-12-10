@@ -20,3 +20,18 @@ def mentor(request):
 
 def author(request):
     return render(request, 'alfa/author.html',{})
+
+def form(request):
+    return render(request, 'alfa/form.html',{})
+
+def news(request):
+    foto_blog = request.POST['form_image']
+    judul_blog = request.POST['form_title']
+    isi_blog = request.POST['form_content']
+    tanggal_blog = request.POST['form_date']
+
+    news = Blog(foto_blog=foto_blog, judul_blog=judul_blog, isi_blog=isi_blog, tanggal_blog=tanggal_blog)
+    news.save()
+
+    blog_data = Blog.objects.all()
+    return render(request, 'alfa/blog.html',{'blog_data' : blog_data})
