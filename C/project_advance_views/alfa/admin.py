@@ -1,5 +1,5 @@
 from django.contrib import admin
-from.models import Mentee, Mantor, Blog
+from.models import Mentee, Mentor, Blog
 
 # Register your models here.
 
