@@ -47,42 +47,26 @@ blog
         <section>
             <div class="container">
                 <div class="group_body row align-items-center text-start">
+                    {% for d in blog_data %}
                     <div class="col-md-2"></div>
                     <div class="col-md-8 align-items-center">
-                        <img class="image_blog" src="{% static 'img/blog/kendala-sepulsa.jpg' %}" alt="">
+                        <img class="image_blog" src="{{d.foto_blog}}" alt="">
                         <div class="row">
                             <div class="left col-md-6">
-                                <p>September 25, 2018</p>
+                                <p>{{d.tanggal_blog}}</p>
                             </div>
                             <div class="right col-md-6">
                                 <p>0 comment</p>
                             </div>
                         </div>
-                        <h1 class="judul_tajuk">Punya Kendala? Segera Hubungi Customer Service Sepulsa?</h1>
+                        <h1 class="judul_tajuk">{{d.judul_blog}}</h1>
                         <h2 class="isi_tajuk">
-                            Bagi Sepulsa, kepuasan pelanggan adalah yang utama. Kami senantiasa mendengarkan keluhan maupun 
-                            kendala yang kamu hadapai selama melakukan transaksi di Sepulsa. Umumnya pelanggan Sepulsa menghadapi kendala sebagai berikut: 
-                            Statis Order Pending dalam jangka waktu 15 menit, segera hubungi tim Customer Service dengan menyertakan email..
-                        </h2>
-                        <h3 class ="baca_selengkapnya"><a href='/blog'>Baca selengkapnya...</a></h3>
-                        <img class="image_blog" src="{% static 'img/blog/sms.png' %}" alt="">
-                        <div class="row">
-                            <div class="left col-md-6">
-                                <p>Agustus 14, 2018</p>
-                            </div>
-                            <div class="right col-md-6">
-                                <p>0 comment</p>
-                            </div>
-                        </div>
-                        <h1 class="judul_tajuk">Punya Kendala? Segera Hubungi Customer Service Sepulsa?</h1>
-                        <h2 class="isi_tajuk">
-                            Kemudahan dalam berbagai transaksi perbankan memang banyak memberikan keuntungan bagi nasabah. Bayangkan saja, aktivitas jual beli
-                            yang pada awalnya membutuhkan waktu dan tempat, kini bisa dilakukan tanpa perlu beranjak dari tempat duduk kamu dan pembayaran lunas
-                            dalam hitungan detik dengan transaksi online. Namun tanpa disadari, kemudahan tersebut bukan berarti tanpa celah. Sebelum kita membahas lebih...
+                            {{d.isi_blog}}
                         </h2>
                         <h3 class ="baca_selengkapnya"><a href='/blog'>Baca selengkapnya...</a></h3>
                     </div>
                     <div class="col-md-2"></div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
