@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>author</title>
+        {% load static %}
+        <link rel='stylesheet' href="{% static 'CSS/bootstrap.min.css' %}">
+        <link rel='stylesheet' href="{% static 'CSS/main.css' %}">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class='logo'>
+                            <h1>Alpha Tech Academy</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-nav">
+                            <ul class="header-nav__list list-unstyled">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="/mentor">Mentor</a>
+                                </li>
+                                <li>
+                                    <a href="/mentee">Mentee</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/author">Author</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="background_home col-md-12">
+                        <div class="container">
+                            <div class="row align-items-center text-center">
+                                <div class="col-md-12">
+                                    <div class="home_content">
+                                        <img class="image_home" src="{% static 'img/title/alpha-logo.png' %}" alt="">
+                                        <h2>Alpha Tech Academy</h2>
+                                        <h3>
+                                            Alpha Tech Academy is a tech talent incubator that gives everyone
+                                        </br>
+                                            (even non IT background) a chance to be a professional Tech Talent
+                                        </br>
+                                            within 3 months. Contact Person: 
+                                        </br>
+                                            Email: academy@alphatech.id
+                                        </br>
+                                            Mobile Phone: 0877 9609 9530
+                                        </h3>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="group_body row align-items-center text-start">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-items-center">
+                        <img class="image_author" src="{% static 'img/author/author.jpg' %}" alt="">
+                        <h2 class= "judul">Nama Author</h2>
+                        <p class ="author_quote">
+                            <strong>Please Write your Summary</strong>
+                            Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. 
+                            Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. 
+                        </p>
+                        <table class="author_table">
+                            <tr>
+                                <th>Alamat</th>
+                                <td>: Alamat Author</td>
+                            </tr>
+                            <tr>
+                                <th>Telephone</th>
+                                <td>: Author's Telephone</td>
+                            </tr>
+                            <tr>
+                                <th>Education</th>
+                                <td>: Author's Education</td>
+                            </tr>
+                            <tr>
+                                <th>Profession</th>
+                                <td>: Author's Profession</td>
+                            </tr>
+                            <tr>
+                                <th>Nationality</th>
+                                <td>: Author's Nationality</td>
+                            </tr>
+                            <tr>
+                                <th>Company</th>
+                                <td>: Author's Company</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>: Author's Email</td>
+                            </tr>
+                            <tr>
+                                <th>Adress</td>
+                                <td>: Author's Address</td>
+                            </tr>
+                        </table>
+                        <iframe class= "author_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.004707385024!2d112.60789138273314!3d-7.9729725155740425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa77fa961a7c4e4b7!2sSepulsa%20Lodge%20Malang!5e0!3m2!1sen!2sid!4v1575982896153!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="background_footer_product container-fluid"> 
+                <div class="container">
+                    <div class="row align-items-center text-center footer_body_product">
+                        <span>Our Product:</span>
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-alphapay.png' %}" alt="">
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-sepulsa.png' %}" alt="">
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-alphabill.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="background_footer_contact container-fluid"> 
+                    <div class="container">
+                        <div class="row align-items-center text-center footer_body_contact">
+                            <span>Contact Person:</span>
+                            <span class="phone">Mobile Phone: 0877 9609 9530.</span>
+                            <span class="email">Email:</span>
+                            <span class="user">academy@alphatech.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
