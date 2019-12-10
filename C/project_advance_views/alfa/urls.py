@@ -15,5 +15,5 @@ urlpatterns= [
     
     path('blog/form', views.form, name='form'),
 
-    path('blog/form/news', views.news, name='form'),
+    path('blog/news', views.news, name='form'),
     ]

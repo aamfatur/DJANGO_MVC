@@ -52,7 +52,8 @@ blog
         </div>
         <div class="container">
             <div class="body_content_h4 row align-items-center text-center">
-                <form action="blog/form/news" method="POST">
+                <form action="/blog/news" method="post">
+                {% csrf_token %}
                     <label for="image">Link</label>
                     <input type="text" name="form_image" id="image">
                 </br>
@@ -60,7 +61,7 @@ blog
                     <input type="text" name="form_title" id="title">
                 </br>
                     <label for="date">Date Blog</label>
-                    <input type="text" name="form_date" id="date">
+                    <input type="date" name="form_date" id="date">
                 </br>
                     <label for="content">content Blog</label>
                     <input type="text" name="form_content" id="content">
