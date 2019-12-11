@@ -8,7 +8,7 @@ class Mentee(models.Model):
     quote_mentee = models.CharField(max_length=200,default="")
 
     def __str__ (self):
-        return f'Nama mentee: {self.nama_mentee}'
+        return self.nama_mentee
         
 class Mentor(models.Model):
     foto_mentor = models.CharField(max_length=200,default="")
@@ -17,7 +17,7 @@ class Mentor(models.Model):
     quote_mentor = models.CharField(max_length=200,default="")
 
     def __str__ (self):
-        return f'Nama mentor{self.nama_mentor}'
+        return self.nama_mentor
 
 class Blog(models.Model):
     foto_blog = models.CharField(max_length=200,default="")
@@ -26,4 +26,4 @@ class Blog(models.Model):
     tanggal_blog = models.DateField("tanggal blog")
 
     def __str__ (self):
-        return f'Judul blog{self.judul_blog}'
+        return self.judul_blog

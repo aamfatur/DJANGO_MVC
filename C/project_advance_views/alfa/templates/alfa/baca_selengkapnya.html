@@ -44,35 +44,26 @@ blog
 
 
 {% block isi %}
-    <section>
-        <div class="container">
-            <div class="body_content_h4 row align-items-center text-center">
-                <h4>New BLog Form</h4>
-            </div>
-        </div>
-        <div class="container">
-            <div class="body_content row align-items-center text-center">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <form class="form-group" action="/blog/news" method="post">
-                    {% csrf_token %}
-                        <label for="image">Link</label>
-                        <input class="form-control" type="text" name="form_image" id="image" placeholder="Copy the image location link" required>
-                    </br>
-                        <label for="title">Titile Blog</label>
-                        <input class="form-control" type="text" name="form_title" id="title" required>
-                    </br>
-                        <label for="date">Date Blog</label>
-                        <input class="form-control"type="date" name="form_date" id="date" required>
-                    </br>
-                        <label for= "content">Content</label>
-                        <textarea class="form-control" name="form_content" id="content"></textarea>
-                    </br>
-                        <input type="submit" value="Submit">
-                    </form>
+        <section>
+            <div class="container">
+                <div class="group_body row align-items-center text-start">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 align-items-center">
+                        <img class="image_blog" src="{{blog.foto_blog}}" alt="">
+                        <div class="row">
+                            <div class="left col-md-6">
+                                <p>{{blog.tanggal_blog}}</p>
+                            </div>
+                            <div class="right col-md-6">
+                                <p>0 comment</p>
+                            </div>
+                        </div>
+                        <h1 class="judul_tajuk">{{blog.judul_blog}}</h1>
+                        <h2 class="isi_tajuk">
+                            {{blog.isi_blog}}
+                        </h2>
+                    </div>
                 </div>
-                <div class="col-md3"></div>
             </div>
-        </div>
-    </section>
+        </section>
 {% endblock %}

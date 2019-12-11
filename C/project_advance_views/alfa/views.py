@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Mentee, Mentor, Blog 
 
@@ -35,3 +35,7 @@ def news(request):
 
     blog_data = Blog.objects.all()
     return render(request, 'alfa/blog.html',{'blog_data' : blog_data})
+
+def BacaSelengkapnya(request, blog_id):
+    blog = get_object_or_404(Blog, pk=blog_id)
+    return render(request, 'alfa/baca_selengkapnya.html', {'blog': blog})

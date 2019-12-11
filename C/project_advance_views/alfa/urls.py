@@ -15,5 +15,7 @@ urlpatterns= [
     
     path('blog/form', views.form, name='form'),
 
-    path('blog/news', views.news, name='form'),
+    path('blog/news', views.news, name='news'),
+
+     path('blog/<int:blog_id>', views.BacaSelengkapnya, name='full_news'),
     ]

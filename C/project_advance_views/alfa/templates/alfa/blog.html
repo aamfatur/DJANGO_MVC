@@ -63,16 +63,18 @@ blog
                         <h2 class="isi_tajuk">
                             {{d.isi_blog}}
                         </h2>
-                        <h3 class ="baca_selengkapnya"><a href='/blog'>Baca selengkapnya...</a></h3>
+                        <h3 class ="baca_selengkapnya"><a href="{% url 'full_news' d.id %}">Baca selengkapnya...</a></h3>
                     </div>
                     <div class="col-md-2"></div>
                     {% endfor %}
                     <div class="col-md-2"></div>
                     <div class="col-md-8 align-items-start">
-                        <div class="input_button">
-                            <form method="get" action="blog\form">
+                        <a href="blog\form" class="home_button">Create a new Blog</a> 
+                        <!-- <div class="input_button"> -->
+                            <!-- <h3 class ="baca_selengkapnya"><a href='blog\form'>Create new blog</a></h3> -->
+                            <!-- <form method="get" action="blogform">
                                 <input type="submit" value="Create New Blog">
-                            </form>
+                            </form> -->
                         <div class="col-md-2"></div>
                     </div>
                 </div>
