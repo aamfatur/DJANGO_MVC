@@ -61,7 +61,7 @@ blog
                         </div>
                         <h1 class="judul_tajuk">{{d.judul_blog}}</h1>
                         <h2 class="isi_tajuk">
-                            {{d.isi_blog}}
+                            {{d.isi_blog |safe|truncatewords:"30"|linebreaks }}
                         </h2>
                         <h3 class ="baca_selengkapnya"><a href="{% url 'full_news' d.id %}">Baca selengkapnya...</a></h3>
                     </div>
